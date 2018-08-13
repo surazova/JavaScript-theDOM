@@ -58,24 +58,14 @@ list.appendChild(li);
 
 });
 
-//Lesson 13
-//Changing the CSS
 
-// var li = document.querySelector('li:last-child')
-// li
-// li.style.color = "red"
-//li.style.marginTop = "60px"
-
-//to get the class name: li.className 
-
-
-
-//Lesson 14 
-//Reading, checking, changing, and removing attributes 
-//book.getAttribute('class')  (how to reach in and grab an attribute)
-//book.getAttribute('href')
-
-//book.setAttribute('class', 'name 2') (changing an attribute)
-//book.hasAttribute('class')  (to check attribute, give you a true or false on if it does or doesn't have that attribute )
-
-//book.removeAttribute('class')  (removes an attribute)
+//Lesson 15
+//hide books
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+    if(hideBox.checked){
+        list.style.display = "none";
+    } else {
+        list.style.display = "initial"; //"block also shows it"
+    }
+});
