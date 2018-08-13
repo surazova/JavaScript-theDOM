@@ -26,15 +26,29 @@ list.addEventListener('click', function(e){
 //document.forms[0]
 
 
-//add book-list 
+//add books
 //We want to prevent the default behavior of the add button refreshing the page 
 const addForm = document.forms['add-book'];
 
 addForm.addEventListener('submit', function(e){
    e.preventDefault();
    const value = addForm.querySelector('input[type = "text"]').value;
-   console.log(value);
+
+
+//Lesson 12 
+//Create elements 
+
+const li = document.createElement('li');
+const bookName = document.createElement('span');
+const deleteBtn = document.createElement('span');
+
+//add content 
+deleteBtn.textContent = 'delete';
+bookName.textContent = value;
+
+//append to document
+li.appendChild(bookName);
+li.appendChild(deleteBtn);
+list.appendChild(li);
+
 });
-
-
-
