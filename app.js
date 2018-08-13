@@ -18,4 +18,23 @@ list.addEventListener('click', function(e){
         list.removeChild(li);
     }
     
-})
+});
+
+
+//Lesson 11 
+//To query the dom for forms: document.forms
+//document.forms[0]
+
+
+//add book-list 
+//We want to prevent the default behavior of the add button refreshing the page 
+const addForm = document.forms['add-book'];
+
+addForm.addEventListener('submit', function(e){
+   e.preventDefault();
+   const value = addForm.querySelector('input[type = "text"]').value;
+   console.log(value);
+});
+
+
+
