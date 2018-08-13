@@ -46,9 +46,25 @@ const deleteBtn = document.createElement('span');
 deleteBtn.textContent = 'delete';
 bookName.textContent = value;
 
+
+//add Classes (lesson 13)
+bookName.classList.add('name');
+deleteBtn.classList.add('delete');
+
 //append to document
 li.appendChild(bookName);
 li.appendChild(deleteBtn);
 list.appendChild(li);
 
 });
+
+//Lesson 13
+//Changing the CSS
+
+// var li = document.querySelector('li:last-child')
+// li
+// li.style.color = "red"
+//li.style.marginTop = "60px"
+
+//to get the class name: li.className 
+
