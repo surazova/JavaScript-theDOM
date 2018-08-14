@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function(){
 //Lesson 10 
 // var btns = document.querySelectorAll('#book-list.delete');
 
@@ -102,4 +103,7 @@ tabs.addEventListener('click', function(e){
             }
         })
     }
+}) 
 })
+
+//Lesson 17: we wrapped everything inside of the DOMContent Loaded Event, which makes the script run when evrything has fully loaded. That way, you can link your script at the top of the HTML File, in the head, instead of at the end of the body. 
